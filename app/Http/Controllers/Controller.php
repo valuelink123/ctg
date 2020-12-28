@@ -35,5 +35,19 @@ class Controller extends BaseController
         }
         return array('msg'=>$msg,'productInfo'=>$productInfo);
     }
+    /*
+    * 得到产品类别的键值对array(id=>name)
+     */
+    public function getProductCategory()
+    {
+        $_data = DB::table('ctg_product_category')->get()->toArray();
+        $data = array();
+        if($_data){
+            foreach($_data as $key=>$val){
+                $data[$val->id] = $val->name;
+            }
+        }
+        return $data;
+    }
 
 }

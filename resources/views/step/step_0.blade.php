@@ -34,7 +34,7 @@
                                                             <br />Your product warranty has been activated.</h3></div>
                                                     <div class="fusion-button-wrapper fusion-aligncenter">
                                                         <a class="fusion-button button-flat button-xlarge button-orange button-1 fusion-button-default-span fusion-button-default-type" target="_self" href="/step/step-1?requestId={{$requestId}}">
-                                                            <i class="fa-check fas button-icon-left"></i>
+                                                            <i class="fas button-icon-left"></i>
                                                             <span class="fusion-button-text">Claim Your Gift Now!</span></a>
                                                     </div>
                                                     <div class="fusion-text warr">
@@ -51,8 +51,7 @@
                                                     <div class="woocommerce ">
                                                         <ul class="products clearfix products-1">
                                                             <li class="product-grid-view product type-product post-1362 status-publis h first instock product_cat-free-gift has-post-thumbnail shipping-taxable p roduct-type-simple">
-                                                                <a href="javascript:void(0)" class="product-images" aria-label="DB POWER Car Headrest Mount for Portable DVD Player (10.5 inch)">
-                                                                <!-- <a href="/product/detail?id={{$productInfo['id']}}" class="product-images" aria-label="DB POWER Car Headrest Mount for Portable DVD Player (10.5 inch)"> -->
+                                                                <a href="/product/detail?id={{$productInfo['id']}}" class="product-images" aria-label="DB POWER Car Headrest Mount for Portable DVD Player (10.5 inch)">
                                                                     <div class="featured-image">
                                                                         <img width="500" height="500" src="{{$productInfo['img']}}" class="attachment-shop_catalog s ize-shop_catalog wp-post-image" alt="" />
                                                                         <div class="cart-loading">
@@ -64,8 +63,7 @@
                                                                     <div class="product-details">
                                                                         <div class="product-details-container">
                                                                             <h3 class="product-title fusion-responsive-typography-calculated" data-fontsize="24" data-lineheight="30px" style="--fontSize:24; line-height:1.25;">
-                                                                                <a href="javascript:void(0)">
-                                                                                <!-- <a href="/product/detail?id={{$productInfo['id']}}"> -->{{$productInfo['title']}}
+                                                                                <a href="/product/detail?id={{$productInfo['id']}}">{{$productInfo['title']}}
                                                                                 </a>
                                                                             </h3>
                                                                             <div class="fusion-price-rating"></div>
@@ -74,8 +72,7 @@
                                                                     <div class="product-buttons">
                                                                         <div class="fusion-content-sep sep-none"></div>
                                                                         <div class="product-buttons-container clearfix">
-                                                                            <a href="javascript:void(0)" style="float:none;max-width:none;text-align:center;">
-                                                                            <!-- <a href="/product/detail?id={{$productInfo['id']}}" style="float:none;max-width:none;text-align:center;"> -->
+                                                                            <a href="/product/detail?id={{$productInfo['id']}}" style="float:none;max-width:none;text-align:center;">
                                                                             Details</a></div>
                                                                     </div>
                                                                 </div>

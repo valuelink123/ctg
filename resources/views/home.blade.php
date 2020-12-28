@@ -50,39 +50,49 @@
                                                                     <ul id="gform_fields_14" class="gform_fields top_label form_sublabel_below description_below">
                                                                         <li id="field_14_2" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
                                                                             <label class="gfield_label" for="input_14_2">Your Name
-                                                                                <span class="gfield_required">*</span></label>
+                                                                                <span class="gfield_required">*</span>
+                                                                            </label>
                                                                             <div class="ginput_container ginput_container_text">
-                                                                                <input name="tester_name" id="input_14_2" type="text" value="" class="large" aria-required="true" aria-invalid="false" required></div>
+                                                                                <input name="tester_name" id="input_14_2" type="text" value="" class="large" aria-required="true" aria-invalid="false" required>
+                                                                            </div>
                                                                         </li>
                                                                         <li id="field_14_3" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
                                                                             <label class="gfield_label" for="input_14_3">Email
-                                                                                <span class="gfield_required">*</span></label>
+                                                                                <span class="gfield_required">*</span>
+                                                                            </label>
                                                                             <div class="ginput_container ginput_container_email">
-                                                                                <input name="tester_email" id="input_14_3" type="email" value="" class="large" aria-required="true" aria-invalid="false" required></div>
-                                                                </li>
-                                                                <li id="field_14_5" class="gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
-                                                                    <label class="gfield_label">
-                                                                        <span class="gfield_required">*</span></label>
-                                                                    <div class="ginput_container ginput_container_checkbox">
-                                                                        <ul class="gfield_checkbox" id="input_14_5">
-                                                                            <li class="gchoice_14_5_1">
-                                                                                <input name="input_5" type="checkbox" value="I accept the ClaimGiftsNow.com Terms and Policy" checked="checked" id="choice_14_5_1">
-                                                                                <label for="choice_14_5_1" id="label_14_5_1">
+                                                                                <input name="tester_email" id="input_14_3" type="email" value="" class="large" aria-required="true" aria-invalid="false" required>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li id="field_14_5" class="gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+                                                                            <label class="gfield_label">
+                                                                                <span class="gfield_required">*</span>
+                                                                            </label>
+                                                                            <div class="ginput_container ginput_container_checkbox">
+                                                                                <ul class="gfield_checkbox" id="input_14_5">
+                                                                                    <li class="gchoice_14_5_1">
+                                                                                        <input name="input_5" type="checkbox" value="I accept the ClaimGiftsNow.com Terms and Policy" checked="checked" id="choice_14_5_1">
+                                                                                        <label for="choice_14_5_1" id="label_14_5_1">
                                                                                     I accept the ClaimGiftsNow.com Terms and Policy.
-                                                                                    <a href="/privacyStatement" target="_blank">View detail</a></label>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </li>
-                                                                </ul>
+                                                                                            <a href="/privacyStatement" target="_blank">View detail</a>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="gform_footer top_label">
+                                                                    <input type="submit" id="gform_submit_button_14" class="gform_button button" value="OK!">
+                                                                </div>
+                                                            </form>
                                                         </div>
-                                                        <div class="gform_footer top_label">
-                                                            <input type="submit" id="gform_submit_button_14" class="gform_button button" value="OK!"></div>
-                                                        </form>
+                                                        <div id="gform_confirmation_wrapper_14" class="gform_confirmation_wrapper" style="display:none;">
+                                                            <div id="gform_confirmation_message_14" class="gform_confirmation_message_14 gform_confirmation_message">
+                                                                Thanks for contacting us! We will get in touch with you shortly.
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <p>
-                                                    </p>
-                                                </div>
                                                 <div class="fusion-clearfix"></div>
                                             </div>
                                         </div>
@@ -93,6 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 下面博客文章开始 -->
                                 <div class="fusion-fullwidth fullwidth-box fusion-builder-row-2 hundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: #f2f2f2;background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:50px;padding-bottom:0px;padding-left:50px;">
                                     <div class="fusion-builder-row fusion-row ">
                                         <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1 fusion-builder-column-3 fusion-one-full fusion-column-first fusion-column-last 1_1" style="margin-top:0px;margin-bottom:0px;">
@@ -108,7 +119,7 @@
                                                                                 <img width="980" height="999" src="/image/71nDzZ8VOL._AC_SL1000_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=dbpower_projector">DBPOWER Projector Screen 100 inch, 16:9 HD 3D Foldable Anti-Crease Portable Projector Movie Screen for Home Theater Indoor Outdoor Support Double Sided Projection</a>
+                                                                                        <a class="" href="/article?type=dbpower_projector"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=dbpower_projector" aria-label="DBPOWER Projector Screen 100 inch, 16:9 HD 3D Foldable Anti-Crease Portable Projector Movie Screen for Home TheaterIndoor Outdoor Support Double Sided Projection"></a>
                                                                                     </div>
                                                                                 </div>
@@ -138,7 +149,7 @@
                                                                                 <img width="960" height="720" src="/image/4.jpg" class="attachment-full size-fullwp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=tens_pads">Tens Pads-4 pcs Pakage</a>
+                                                                                        <a class="" href="/article?type=tens_pads"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=tens_pads" aria-label="Tens Pads-4 pcs Pakage"></a>
                                                                                     </div>
                                                                                 </div>
@@ -168,7 +179,7 @@
                                                                                 <img width="522" height="522" src="/image/715YxCnm1KL._SX522_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=nursal_waist_L">NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap andWaist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back Lumbar Support Ab Belt for Man and Women (L)</a>
+                                                                                        <a class="" href="/article?type=nursal_waist_L"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=nursal_waist_L" aria-label="NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap and Waist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back LumbarSupport Ab Belt for Man and Women (L)"></a>
                                                                                     </div>
                                                                                 </div>
@@ -198,7 +209,7 @@
                                                                                 <img width="522" height="522" src="/image/715YxCnm1KL._SX522_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=nursal_waist_M">NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap andWaist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back Lumbar Support Ab Belt for Man and Women (M)</a>
+                                                                                        <a class="" href="/article?type=nursal_waist_M"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=nursal_waist_M" aria-label="NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap and Waist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back LumbarSupport Ab Belt for Man and Women (M)"></a>
                                                                                     </div>
                                                                                 </div>
@@ -228,7 +239,7 @@
                                                                                 <img width="630" height="630" src="/image/joyoffood.jpg" class="attachment-full size-full wp-post-image" alt="the joy of food" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=the_joy_of_food">The Joy of Food</a>
+                                                                                        <a class="" href="/article?type=the_joy_of_food"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=the_joy_of_food" aria-label="The Joy of Food"></a>
                                                                                     </div>
                                                                                 </div>
@@ -258,7 +269,7 @@
                                                                                 <img width="630" height="630" src="/image/beauty.jpg" class="attachment-full size-full wp-post-image" alt="101 beauty tips" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=101_beauty_tips">101 Beauty Tips</a>
+                                                                                        <a class="" href="/article?type=101_beauty_tips"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=101_beauty_tips" aria-label="101 Beauty Tips"></a>
                                                                                     </div>
                                                                                 </div>
@@ -288,7 +299,7 @@
                                                                                 <img width="630" height="630" src="/image/thanks-giving.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=seven_tips_friendsgiving">Seven Tips To Having A Successful Friendsgiving</a>
+                                                                                        <a class="" href="/article?type=seven_tips_friendsgiving"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=seven_tips_friendsgiving" aria-label="Seven Tips To Having A Successful Friendsgiving"></a>
                                                                                     </div>
                                                                                 </div>
@@ -318,7 +329,7 @@
                                                                                 <img width="630" height="630" src="/image/Weight-Lose-Food.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=weight_loss">The 5 Most Weight Loss Friendly Foods on The Planet</a>
+                                                                                        <a class="" href="/article?type=weight_loss"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=weight_loss" aria-label="The 5 Most Weight Loss Friendly Foods on The Planet"></a>
                                                                                     </div>
                                                                                 </div>
@@ -348,7 +359,7 @@
                                                                                 <img width="630" height="630" src="/image/watermelon.jpg" class="attachment-full size-fullwp-post-image" alt="watermelon" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=health_benefits">10 Health Benefits ofWatermelon</a>
+                                                                                        <a class="" href="/article?type=health_benefits"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=health_benefits" aria-label="10 Health Benefitsof Watermelon"></a>
                                                                                     </div>
                                                                                 </div>
@@ -378,7 +389,7 @@
                                                                                 <img width="630" height="630" src="/image/Supplement.jpg" class="attachment-full size-fullwp-post-image" alt="" draggable="false">
                                                                                 <div class="fusion-rollover">
                                                                                     <div class="fusion-rollover-content">
-                                                                                        <a class="fusion-rollover-link" href="/article?type=nutritional_supplements">Top 10 Reasons to Take Nutritional Supplements</a>
+                                                                                        <a class="" href="/article?type=nutritional_supplements"></a>
                                                                                         <a class="fusion-link-wrapper" href="/article?type=nutritional_supplements" aria-label="Top 10 Reasons to Take Nutritional Supplements"></a>
                                                                                     </div>
                                                                                 </div>
@@ -407,6 +418,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 下面博客文章结束 -->
                             </div>
                     </div>
                     </section>
@@ -441,7 +453,8 @@
                 dataType:'json',
                 success: function(res) {
                     if(res.status==1){
-                        alert('Success');
+                        $('#gform_wrapper_14').css('display','none');
+                        $('#gform_confirmation_wrapper_14').css('display','block');
                     }else{
                         alert(res.msg);
                     }

@@ -1,14 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-// use \DrewM\MailChimp\MailChimp;
 use Illuminate\Http\Request;
-// use App\Models\RsgRequest;
-// use App\Models\RsgProduct;
-// use Illuminate\Support\Facades\Auth;
-// use Illuminate\Support\Facades\Hash;
-// use Illuminate\Support\Facades\Validator;
-// use Illuminate\Support\Facades\App;
 use DB;
 
 class HomeController extends Controller
@@ -25,7 +18,8 @@ class HomeController extends Controller
     //隐私申明展示
     public function privacyStatement()
     {
-    	return view('privacy_statement');
+        $args['title'] = 'PRIVACY STATEMENT-Claim the gift';
+    	return view('privacy_statement',['args'=>$args]);
     }
     /*
     * 文章内容
@@ -50,7 +44,8 @@ class HomeController extends Controller
      */
     public function blog()
     {
-		return view('blog');
+        $args['title'] = 'BLOG-Claim the gift';
+		return view('blog',['args'=>$args]);
     }
     /*
      * 测试客户自己输入信息

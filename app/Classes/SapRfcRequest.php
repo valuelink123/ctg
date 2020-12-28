@@ -29,7 +29,7 @@ class SapRfcRequest {
     private $host;
     private $appid;
     private $appsecret;
-
+    //113.108.40.136:18003,116.6.105.153:18003
     public function __construct($appid = 'site0001', $appsecret = 'testsite0001', $host = '192.168.10.10:18003') {
         $this->host = $host;
         $this->appid = $appid;

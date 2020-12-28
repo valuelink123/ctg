@@ -5,12 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Classes\SapRfcRequest;
 use App\Models\Ctg;
-// use App\Models\RsgRequest;
-// use App\Models\RsgProduct;
-// use Illuminate\Support\Facades\Auth;
-// use Illuminate\Support\Facades\Hash;
-// use Illuminate\Support\Facades\Validator;
-// use Illuminate\Support\Facades\App;
 use DB;
 
 class StepController extends Controller
@@ -70,7 +64,8 @@ class StepController extends Controller
         if($msg){
             return view('error',['msg'=>$msg]);
         }
-        return view('step.step_0',['orderInfo'=>$orderInfo,'productInfo'=>$productInfo,'requestId'=>$requestId]);
+        $args['title'] = 'Claim the gift 0 - Claim The Gift';
+        return view('step.step_0',['orderInfo'=>$orderInfo,'productInfo'=>$productInfo,'requestId'=>$requestId,'args'=>$args]);
     }
     //第一步
     public function stepOne(Request $request)
@@ -107,7 +102,8 @@ class StepController extends Controller
         if($msg){
             return view('error',['msg'=>$msg]);
         }
-        return view('step.step_1',['productInfo'=>$productInfo,'requestId'=>$requestId]);
+        $args['title'] = 'Claim The Gift Step 1 – Claim The Gift';
+        return view('step.step_1',['productInfo'=>$productInfo,'requestId'=>$requestId,'args'=>$args]);
     }
     //第二步
     public function stepTwo(Request $request)
@@ -137,7 +133,8 @@ class StepController extends Controller
         if($msg){
             return view('error',['msg'=>$msg]);
         }
-        return view('step.step_2',['productInfo'=>$productInfo,'requestId'=>$requestId]);
+        $args['title'] = 'Claim the gift step 2 - Claim The Gift';
+        return view('step.step_2',['productInfo'=>$productInfo,'requestId'=>$requestId,'args'=>$args]);
     }
     //第三步
     public function stepThree(Request $request)
@@ -166,7 +163,8 @@ class StepController extends Controller
             $msg = 'Data exception';
             return view('error',['msg'=>$msg]);
         }
-        return view('step.step_3',['requestId'=>$requestId,'return'=>$return]);
+        $args['title'] = 'Claim the gift step 3 - Claim The Gift';
+        return view('step.step_3',['requestId'=>$requestId,'return'=>$return,'args'=>$args]);
     }
     //第四步
     public function stepFour(Request $request)
@@ -245,7 +243,17 @@ class StepController extends Controller
         }else{
             $msg = 'System error';
         }
-        return view('step.step_4',['requestInfo'=>$requestInfo]);
+        if($msg){
+            return view('error',['msg'=>$msg]);
+        }
+        $args['title'] = 'Claim the gift step 4 - Claim The Gift';
+        return view('step.step_4',['requestInfo'=>$requestInfo,'args'=>$args]);
+    }
+    //第五步，申请成功的页面
+    public function stepFive()
+    {
+        $args['title'] = 'Claim the gift step 5 - Claim The Gift';
+        return view('step.step_5',['args'=>$args]);
     }
 
 

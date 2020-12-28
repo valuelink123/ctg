@@ -3,57 +3,6 @@
 @include('common.layout')
 
     <body data-rsssl="1" class="page-template-default page page-id-1006 theme-Avada woocommerce-js fusion-image-hovers fusion-pagination-sizing fusion-button_size-large fusion-button_type-flat fusion-button_span-no avada-image-rollover-circle-no avada-image-rollover-yes avada-image-rollover-direction-fade fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar no-mobile-totop fusion-disable-outline fusion-sub-menu-fade mobile-logo-pos-left layout-wide-mode avada-has-boxed-modal-shadow-none layout-scroll-offset-full avada-has-zero-margin-offset-top fusion-top-header menu-text-align-center fusion-woo-product-design-classic fusion-woo-shop-page-columns-4 fusion-woo-related-columns-4 fusion-woo-archive-page-columns-3 avada-has-woo-gallery-disabled mobile-menu-design-modern fusion-show-pagination-text fusion-header-layout-v1 avada-responsive avada-footer-fx-none avada-menu-highlight-style-bar fusion-search-form-classic fusion-main-menu-search-overlay fusion-avatar-square avada-dropdown-styles avada-blog-layout-grid avada-blog-archive-layout-grid avada-header-shadow-no avada-menu-icon-position-left avada-has-megamenu-shadow avada-has-mainmenu-dropdown-divider avada-has-header-100-width avada-has-100-footer avada-has-breadcrumb-mobile-hidden avada-has-titlebar-hide avada-has-pagination-padding avada-flyout-menu-direction-fade avada-ec-views-v1 do-animate fusion-no-touch" style="--viewportWidth:1920; height: auto;">
-        <div class="" style="display: none; position: absolute;">
-            <div class="aui_outer">
-                <table class="aui_border">
-                    <tbody>
-                        <tr>
-                            <td class="aui_nw"></td>
-                            <td class="aui_n"></td>
-                            <td class="aui_ne"></td>
-                        </tr>
-                        <tr>
-                            <td class="aui_w"></td>
-                            <td class="aui_c">
-                                <div class="aui_inner">
-                                    <table class="aui_dialog">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2" class="aui_header">
-                                                    <div class="aui_titleBar">
-                                                        <div class="aui_title" style="cursor: move; display: block;"></div>
-                                                        <a class="aui_close" style="display: block;"></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="aui_icon" style="display: none;">
-                                                    <div class="aui_iconBg" style="background: none;"></div>
-                                                </td>
-                                                <td class="aui_main" style="width: auto; height: auto;">
-                                                    <div class="aui_content" style="padding: 20px 25px;"></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="aui_footer">
-                                                    <div class="aui_buttons" style="display: none;"></div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </td>
-                            <td class="aui_e"></td>
-                        </tr>
-                        <tr>
-                            <td class="aui_sw"></td>
-                            <td class="aui_s"></td>
-                            <td class="aui_se" style="cursor: se-resize;"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
         <a class="skip-link screen-reader-text" href="/">Skip to content</a>
         <div id="boxed-wrapper" style="height: auto;">
             <div class="fusion-sides-frame"></div>
@@ -197,7 +146,7 @@
                 dataType:'json',
                 success: function(res) {
                     if(res.status==1){
-                        alert('Success');
+                        window.open('/step/step-5');
                     }else{
                         alert(res.msg);
                     }

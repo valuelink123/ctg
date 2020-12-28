@@ -37,7 +37,7 @@
                                                                                     <img width="980" height="999" src="/image/71nDzZ8VOL._AC_SL1000_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=dbpower_projector">DBPOWER Projector Screen 100 inch, 16:9 HD 3D Foldable Anti-Crease Portable Projector Movie Screen for Home Theater Indoor Outdoor Support Double Sided Projection</a>
+                                                                                            <a class="" href="/article?type=dbpower_projector"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=dbpower_projector" aria-label="DBPOWER Projector Screen 100 inch, 16:9 HD 3D Foldable Anti-Crease Portable Projector Movie Screen for Home TheaterIndoor Outdoor Support Double Sided Projection"></a>
                                                                                         </div>
                                                                                     </div>
@@ -67,7 +67,7 @@
                                                                                     <img width="960" height="720" src="/image/4.jpg" class="attachment-full size-fullwp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=tens_pads">Tens Pads-4 pcs Pakage</a>
+                                                                                            <a class="" href="/article?type=tens_pads"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=tens_pads" aria-label="Tens Pads-4 pcs Pakage"></a>
                                                                                         </div>
                                                                                     </div>
@@ -97,7 +97,7 @@
                                                                                     <img width="522" height="522" src="/image/715YxCnm1KL._SX522_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=nursal_waist_L">NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap andWaist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back Lumbar Support Ab Belt for Man and Women (L)</a>
+                                                                                            <a class="" href="/article?type=nursal_waist_L"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=nursal_waist_L" aria-label="NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap and Waist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back LumbarSupport Ab Belt for Man and Women (L)"></a>
                                                                                         </div>
                                                                                     </div>
@@ -127,7 +127,7 @@
                                                                                     <img width="522" height="522" src="/image/715YxCnm1KL._SX522_.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=nursal_waist_M">NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap andWaist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back Lumbar Support Ab Belt for Man and Women (M)</a>
+                                                                                            <a class="" href="/article?type=nursal_waist_M"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=nursal_waist_M" aria-label="NURSAL Waist Trimmer for Weight Loss Workout Sweat Enhancer Exercise Adjustable Wrap and Waist Trainer for Stomach Adjustable Abdominal Muscle &amp; Back LumbarSupport Ab Belt for Man and Women (M)"></a>
                                                                                         </div>
                                                                                     </div>
@@ -157,7 +157,7 @@
                                                                                     <img width="630" height="630" src="/image/joyoffood.jpg" class="attachment-full size-full wp-post-image" alt="the joy of food" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=the_joy_of_food">The Joy of Food</a>
+                                                                                            <a class="" href="/article?type=the_joy_of_food"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=the_joy_of_food" aria-label="The Joy of Food"></a>
                                                                                         </div>
                                                                                     </div>
@@ -187,7 +187,7 @@
                                                                                     <img width="630" height="630" src="/image//beauty.jpg" class="attachment-full size-full wp-post-image" alt="101 beauty tips" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=101_beauty_tips">101 Beauty Tips</a>
+                                                                                            <a class="" href="/article?type=101_beauty_tips"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=101_beauty_tips" aria-label="101 Beauty Tips"></a>
                                                                                         </div>
                                                                                     </div>
@@ -217,7 +217,7 @@
                                                                                     <img width="630" height="630" src="/image/thanks-giving.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=seven_tips_friendsgiving">Seven Tips To Having A Successful Friendsgiving</a>
+                                                                                            <a class="" href="/article?type=seven_tips_friendsgiving"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=seven_tips_friendsgiving" aria-label="Seven Tips To Having A Successful Friendsgiving"></a>
                                                                                         </div>
                                                                                     </div>
@@ -247,7 +247,7 @@
                                                                                     <img width="630" height="630" src="/image/Weight-Lose-Food.jpg" class="attachment-full size-full wp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=weight_loss">The 5 Most Weight Loss Friendly Foods on The Planet</a>
+                                                                                            <a class="" href="/article?type=weight_loss"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=weight_loss" aria-label="The 5 Most Weight Loss Friendly Foods on The Planet"></a>
                                                                                         </div>
                                                                                     </div>
@@ -277,7 +277,7 @@
                                                                                     <img width="630" height="630" src="/image/watermelon.jpg" class="attachment-full size-fullwp-post-image" alt="watermelon" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=health_benefits">10 Health Benefits ofWatermelon</a>
+                                                                                            <a class="" href="/article?type=health_benefits"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=health_benefits" aria-label="10 Health Benefitsof Watermelon"></a>
                                                                                         </div>
                                                                                     </div>
@@ -307,7 +307,7 @@
                                                                                     <img width="630" height="630" src="/image/Supplement.jpg" class="attachment-full size-fullwp-post-image" alt="" draggable="false">
                                                                                     <div class="fusion-rollover">
                                                                                         <div class="fusion-rollover-content">
-                                                                                            <a class="fusion-rollover-link" href="/article?type=nutritional_supplements">Top 10 Reasons to Take Nutritional Supplements</a>
+                                                                                            <a class="" href="/article?type=nutritional_supplements"></a>
                                                                                             <a class="fusion-link-wrapper" href="/article?type=nutritional_supplements" aria-label="Top 10 Reasons to Take Nutritional Supplements"></a>
                                                                                         </div>
                                                                                     </div>

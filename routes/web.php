@@ -19,11 +19,12 @@ Route::match(['post','get'],'/blog', 'HomeController@blog');//
 Route::post('/addTester', 'HomeController@addTester');//客户添加的自己的邮箱和姓名
 
 
-Route::match(['post','get'],'/step/step-0', 'StepController@stepZero');
+Route::match(['post','get'],'/claim-the-gift-step-0', 'StepController@stepZero');
 Route::match(['post','get'],'/step/step-1', 'StepController@stepOne');
 Route::match(['post','get'],'/step/step-2', 'StepController@stepTwo');
 Route::match(['post','get'],'/step/step-3', 'StepController@stepThree');
 Route::match(['post','get'],'/step/step-4', 'StepController@stepFour');
+Route::match(['post','get'],'/step/step-5', 'StepController@stepFive');
 
 Route::match(['post','get'],'/product/detail', 'ProductController@detail');
 
