@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 // use \DrewM\MailChimp\MailChimp;
 use Illuminate\Http\Request;
-use App\Classes\SapRfcRequest;
 use App\Models\Ctg;
 use DB;
 
@@ -27,39 +26,43 @@ class StepController extends Controller
             $msg = 'Please confirm your order number .';
             return view('error',['msg'=>$msg]);
         }
-
-        $insert['created_at'] = date('Y-m-d H:i:s');
-        $requestId = Db::table('ctg_request')->insertGetId($insert);//客户申请的数据插入到表ctg_request中
-        if($requestId){
-            $sap = new SapRfcRequest();
-            $sapOrderInfo = SapRfcRequest::sapOrderDataTranslate($sap->getOrder(['orderId' => $orderid]));
-            $asin = isset($sapOrderInfo['orderItems']['0']['ASIN']) ? $sapOrderInfo['orderItems']['0']['ASIN'] : '';
-            if($asin){
-                $addr[] = $sapOrderInfo['AddressLine1'];
-                $addr[] = $sapOrderInfo['AddressLine2'];
-                $addr[] = $sapOrderInfo['AddressLine3'];
-                $addr[] = $sapOrderInfo['City'];
-                $addr[] = $sapOrderInfo['County'];
-                $addr[] = $sapOrderInfo['District'];
-                $addr[] = $sapOrderInfo['StateOrRegion'];
-                $addr[] = $sapOrderInfo['PostalCode'];
-                $addr[] = $sapOrderInfo['CountryCode'];
-                $address = implode(PHP_EOL, $addr);
-                $orderInfo = array('order_id'=>$orderid,'product_title'=>$sapOrderInfo['orderItems']['0']['Title'],'name'=>$sapOrderInfo['Name'],'address'=>$address);
-                //查ctg_gift_contrast表，购买的asin跟礼品产品的对应关系
-                $product_id = DB::table('ctg_gift_contrast')->where('asin',$asin)->pluck('product_id')->first();//没有数据的时候为'',有数据的时候直接是id
-                $product_id = $product_id > 0 ? $product_id : 1;//没有配置礼品对应关系就给予product_id=1
-                DB::table('ctg_request')->where('id',$requestId)->update(['product_id'=>$product_id]);
-                $productInfo = (array)DB::table('ctg_products')->where('id',$product_id)->first();//查出产品信息
-                $imageArr = explode(',',$productInfo['images']);
-                if($imageArr){
-                    $productInfo['img'] = $imageArr[0];
+        //检测传过来的订单号是否符合规则
+        $checkresult = $this->checkOrderData($orderid);
+        if($checkresult['status']==1){
+            $insert['created_at'] = date('Y-m-d H:i:s');
+            $requestId = Db::table('ctg_request')->insertGetId($insert);//客户申请的数据插入到表ctg_request中
+            if($requestId){
+                $sapOrderInfo = $this->getOrderData($orderid);
+                $asin = isset($sapOrderInfo['orderItems']['0']['ASIN']) ? $sapOrderInfo['orderItems']['0']['ASIN'] : '';
+                if($asin){
+                    $addr[] = $sapOrderInfo['AddressLine1'];
+                    $addr[] = $sapOrderInfo['AddressLine2'];
+                    $addr[] = $sapOrderInfo['AddressLine3'];
+                    $addr[] = $sapOrderInfo['City'];
+                    $addr[] = $sapOrderInfo['County'];
+                    $addr[] = $sapOrderInfo['District'];
+                    $addr[] = $sapOrderInfo['StateOrRegion'];
+                    $addr[] = $sapOrderInfo['PostalCode'];
+                    $addr[] = $sapOrderInfo['CountryCode'];
+                    $address = implode(PHP_EOL, $addr);
+                    $orderInfo = array('order_id'=>$orderid,'product_title'=>$sapOrderInfo['orderItems']['0']['Title'],'name'=>$sapOrderInfo['Name'],'address'=>$address);
+                    //查ctg_gift_contrast表，购买的asin跟礼品产品的对应关系
+                    $product_id = DB::table('ctg_gift_contrast')->where('asin',$asin)->pluck('product_id')->first();//没有数据的时候为'',有数据的时候直接是id
+                    $product_id = $product_id > 0 ? $product_id : 1;//没有配置礼品对应关系就给予product_id=1
+                    DB::table('ctg_request')->where('id',$requestId)->update(['product_id'=>$product_id]);
+                    $productInfo = (array)DB::table('ctg_products')->where('id',$product_id)->first();//查出产品信息
+                    $imageArr = explode(',',$productInfo['images']);
+                    if($imageArr){
+                        $productInfo['img'] = $imageArr[0];
+                    }
+                }else{
+                    $msg = 'Please confirm that this order number exists';
                 }
             }else{
-                $msg = 'Please confirm that this order number exists';
+                $msg = 'System error';
             }
         }else{
-            $msg = 'System error';
+            $msg = $checkresult['msg'];
         }
         if($msg){
             return view('error',['msg'=>$msg]);
@@ -229,8 +232,7 @@ class StepController extends Controller
         $requestInfo = (array)DB::table('ctg_request')->where('id',$requestId)->first();
         if($requestInfo){
             $orderid = $requestInfo['order_id'];
-            $sap = new SapRfcRequest();
-            $sapOrderInfo = SapRfcRequest::sapOrderDataTranslate($sap->getOrder(['orderId' => $orderid]));
+            $sapOrderInfo = $this->getOrderData($orderid);
             $asin = isset($sapOrderInfo['orderItems']['0']['ASIN']) ? $sapOrderInfo['orderItems']['0']['ASIN'] : '';
             if($asin){
                 $requestInfo['AddressLine1'] = $sapOrderInfo['AddressLine1'];

@@ -8,11 +8,11 @@
 namespace App\Models;
 
 use App\Asin;
-use App\Classes\SapRfcRequest;
 use App\Exceptions\HypocriteException;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\Controller;
 
 class Ctg extends Model {
     protected $primaryKey = null;
@@ -29,23 +29,15 @@ class Ctg extends Model {
      */
     public static function add($row) {
         $return = array('status'=>1,'msg'=>'');
-
         if (empty($row['order_id'])){
             $return['msg'] = 'ORDER ID IS UNSET';
             $return['status'] = 0;
             return $return;
         }
-
         $row = array_map('trim', $row);
-
         try {
-
-            $sap = new SapRfcRequest();
-
-            $order = $sap->getOrder(['orderId' => $row['order_id']]);
-
-            $order = SapRfcRequest::sapOrderDataTranslate($order);
-
+            $obj = new Controller();
+            $order = $obj->getOrderData($row['order_id']);
             if (empty($order['orderItems'])) {
                 $return['msg'] = 'Order Info Error.';
                 $return['status'] = 0;
