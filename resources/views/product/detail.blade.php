@@ -53,9 +53,9 @@
                                                 <span class="sku_wrapper">SKU:
                                                     <span class="sku">{{$productData['sku']}}</span></span>
                                                 <span class="posted_in">Categories:
-                                                    {{$productData['categoryName']}}
-                                                    <!-- <a href="javascript:void(0)" rel="tag">Free Gift</a>,
-                                                    <a href="#" rel="tag">Wine Glasses</a> -->
+                                                    @foreach($productData['category'] as $ck=>$cv)
+                                                    <a href="/product/productCategory?id={{$ck}}" rel="tag">{{$cv}}</a>
+                                                    @endforeach
                                                 </span>
                                             </div>
                                         </div>

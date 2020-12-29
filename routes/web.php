@@ -27,4 +27,5 @@ Route::match(['post','get'],'/step/step-4', 'StepController@stepFour');
 Route::match(['post','get'],'/step/step-5', 'StepController@stepFive');
 
 Route::match(['post','get'],'/product/detail', 'ProductController@detail');
+Route::match(['post','get'],'/product/productCategory', 'ProductController@productCategory');
 
