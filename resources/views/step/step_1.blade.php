@@ -76,7 +76,7 @@
                                                                             </div>
                                                                         </li>
                                                                         <li id="field_1_4" cla=s s="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
-                                                                            <label class="gfield_label">Where did = you find out about our website?
+                                                                            <label class="gfield_label">Where did you find out about our website?
                                                                                 <span class="gfield_required">*</span></label>
                                                                             <div class="ginput_container ginput_container_radio">
                                                                                 <ul class="gfield_radio" id="input_1_4">
@@ -84,7 +84,7 @@
                                                                                         <input name="input_2" type="radio" value="RMS Lable or Package" id="choice_1_4_0" >
                                                                                         <lab=e l for="choice_1_4_0" id="label_1_4_0">RMS Lable or Package</label></li>
                                                                                     <li class="gchoice_1_4_1">
-                                                                                        <input name="input_2" type="radio" value=="Website" id="choice_1_4_1" >
+                                                                                        <input name="input_2" type="radio" value="Website" id="choice_1_4_1" >
                                                                                         <label for="choice_1_4_1" id="label_1_4_1">Website</label></li>
                                                                                     <li class="gchoice_1_4_2">
                                                                                         <input name="input_2" type="radio" value="Email" id="choice_1_4_2" >
@@ -99,7 +99,7 @@
                                                                             </div>
                                                                         </li>
                                                                         <li id="field_1_5" class="gfield field_sublabel_below field_description_below gfield_visibility_visible">
-                                                                            <label class="gfield_label" for="input_1_5">Do you have any suggestion= s for us?</label>
+                                                                            <label class="gfield_label" for="input_1_5">Do you have any suggestions for us?</label>
                                                                             <div class="ginput_container ginput_container_textarea">
                                                                                 <textarea name="input_3" id="input_1_5" class="textarea medium" aria-=d escribedby="gfield_description_1_5"  maxlength="200" aria-invalid="false" rows="10" cols="50"></textarea>
                                                                                 <div class="charleft ginput_counter">0 of 200 max characters</div></div>
