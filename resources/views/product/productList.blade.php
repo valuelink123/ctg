@@ -45,21 +45,35 @@
                                 @endforeach
                             </ul>
                             <nav class="woocommerce-pagination">
+
+                                <!-- 显示第一页 -->
+                                @if($return['firstflag']==1)
+                                    <a class="prev page-numbers" href="/product/productCategory?id={{$return['id']}}&page=1" data-slimstat="5">
+                                        <span class="page-text">First</span>
+                                    </a>
+                                @endif
+
                                 @if($return['current']!=1)
                                 <a class="prev page-numbers" href="/product/productCategory?id={{$return['id']}}&page={{$return['current']-1}}" data-slimstat="5">
-                                    <!-- <span class="page-prev"></span> -->
                                     <span class="page-text">Previous</span>
                                 </a>
                                 @endif
-                                <!-- <span aria-current="page" class="page-numbers current">1</span> -->
+
                                 @foreach($return['page'] as $key=>$val)
                                 <a class="page-numbers @if($val==$return['current']) current  @endif" href="/product/productCategory?id={{$return['id']}}&page={{$val}}" data-slimstat="5">{{$val}}</a>
                                 @endforeach
+
                                 @if($return['current']!=$return['total'])
                                 <a class="next page-numbers" href="/product/productCategory?id={{$return['id']}}&page={{$return['current']+1}}" data-slimstat="5">
                                     <span class="page-text">Next</span>
-                                    <!-- <span class="page-next"></span> -->
                                 </a>
+                                @endif
+
+                                <!-- 显示最后一页 -->
+                                @if($return['endflag']==1)
+                                    <a class=" nextpage-numbers" href="/product/productCategory?id={{$return['id']}}&page={{$return['total']}}" data-slimstat="5" style="margin-left:5px;">
+                                        <span class="page-text">Last</span>
+                                    </a>
                                 @endif
                             </nav>
                         </section>

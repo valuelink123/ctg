@@ -81,7 +81,9 @@ class ProductController extends Controller
                 $pageArray[] = $i;
             }
         }
-        $return = array('id'=>$id,'current'=>$page,'total'=>$totalPage,'page'=>$pageArray);
+        $firstflag = current($pageArray)==1 ? 0 : 1;//页码中有1的话就不用显示第一页，没1的话就显示第一页
+        $endflag = end($pageArray)==$totalPage ? 0 : 1;//页码中有最后一页的话就不用显示最后一页，没最后一页的话就显示最后一页
+        $return = array('id'=>$id,'current'=>$page,'total'=>$totalPage,'page'=>$pageArray,'firstflag'=>$firstflag,'endflag'=>$endflag);
 
         $_productData = $datas->offset($offset)->limit($length)->get()->toArray();
         foreach($_productData as $key=>$val){
