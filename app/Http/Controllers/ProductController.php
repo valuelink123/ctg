@@ -75,7 +75,8 @@ class ProductController extends Controller
         $page = $page > $totalPage ? $totalPage : $page;//传过来的页数大于最大页数的话，取最后一页的数据展示
         $offset = ($page-1)*$length;//忽略前面多少条数据不查出来，第二页的话就是12
         $startpage = $page-2;//页面上点击链接跳转到n页的起始页
-        $startpage = $startpage<1 ? 1 : $startpage;
+        $startpage = $startpage<1 ? 1 : $startpage;//开始页小于1的时候，从1开始
+        $startpage = $startpage>$totalPage-4 ? $totalPage-4 : $startpage;//确保在比较靠后页码的时候也有5个页码数
         for($i = $startpage; $i<=$totalPage; $i = $i + 1){
             if($i<=$startpage+4){//最多显示5页的按钮
                 $pageArray[] = $i;
